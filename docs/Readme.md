@@ -36,7 +36,7 @@ Made in 🇵🇱 with the [Electron][electron] framework.
 
 ## Philosophy / key features
 
-Nowadays, WebCord is quite complex project; it can be summarized as a pack of
+Nowadays, WebCord is quite a complex project; it can be summarized as a pack of
 security and privacy hardenings, Discord features reimplementations, Electron /
 Chromium / Discord bugs workarounds, stylesheets, internal pages and wrapped
 <https://discord.com> page, designed to conform with ToS as much as it is
@@ -46,16 +46,16 @@ all features, take a look at [Features.md](Features.md).
  - 🕵️ **Hardened for privacy**
 
 WebCord does a lot to improve the privacy of the users. It blocks known tracing
-and fingerprinting methods, but it does not end on it. It also manages the
+and fingerprinting methods, but it does not end on them. It also manages the
 permissions to sensitive APIs like camera or microphone, sets its own user agent
 to the one present in Chromium browsers and spoof web API modifications in order
 to prevent distinguishing it from the real Chrome/Chromium browsers.
 
-- 🛡️ **Follows the best security practises**
+- 🛡️ **Follows the best security practices**
 
 WebCord cares a lot about your security. Being fully written in TypeScript, it
-brings the power of static types to help detecting common bugs without the need
-of testing the app at runtime. All of this is hardened by ESLint, which forbidds
+brings the power of static types to help detect common bugs without the need
+of testing the app at runtime. All of this is hardened by ESLint, which forbids
 some TypeScript practises like the use of `any` type and enforces some cosmetic
 aspects of the code to keep it more consistent.
 
@@ -65,25 +65,25 @@ time. This makes WebCord use more up-to-date Electron releases with more recent
 Chromium engine.
 
 Built on top Electron and Chromium, WebCord's security is also highly dependant
-from Chrome's [vulnerability rewards program][chromiumbounty], which is probably
-one of the most known programs like this when comparing to different popular
-browser engines choices. Electron is also well-prepared for loading remote
-content, using their process model to the advantage and different Chromium
+on Chrome's [vulnerability rewards program][chromiumbounty], which is probably
+one of the most known programs like this when compared to different popular
+browser engine choices. Electron is also well-prepared for loading remote
+content, using its process model to the advantage and different Chromium
 sandboxing techniques to split Node.js from browser scripts. WebCord also tries
-its best to follow practises from the [Electron#Security].
+its best to follow practices from the [Electron#Security].
 
 - 🛠️ **Customizable**
 
-WebCord can be configured to your needs and the preferences – you can harden it
-even more by blocking unnecesarry third-party websites in Content Security
-Policy settings, improve your privacy by blocking typing indicator and much more!
-Moreover, a support for custom stylesheets is on its way, allowing you to theme
+WebCord can be configured to your needs and preferences – you can harden it
+even more by blocking unnecessarry third-party websites in Content Security
+Policy settings, improve your privacy by blocking typing indicators and much more!
+Moreover, support for custom stylesheets is on its way, allowing you to theme
 WebCord the way you like!
 
 - 📱 **ARM-friendly and Linux mobile support**
 
 Although Electron is not designed to work on mobile devices, WebCord tries its
-best to be responsive even on devices with the smaller screens and touch
+best to be responsive even on devices with smaller screens and touch
 screens. It's still not ideal, but should work for basic Discord usage. However
 I plan to focus on it someday and to make it look and work closer to the
 official Discord Android client.
